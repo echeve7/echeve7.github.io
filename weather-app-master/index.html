@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Weather</title>
+</head>
+<body>
+  <div class="container-pricipal">
+    
+    <aside class="container-hide">
+      <img onclick="cerrarBusqueda()" src="./img/icons8-x-48.png" alt="">
+      <div>
+        <form class="search_submit">
+          <input class="input-buscar" type="text" placeholder="Write a city">
+          <button class="button-hide" onclick="buscarCiudad()" type="submit">Search</button>
+        </form>
+      </div>
+    </aside>
+
+    <aside class="container-aside">
+      
+      
+
+      <div class="search-box">
+        <button class="search-button" onclick="mostrarBusqueda()">
+          Search for places
+        </button>
+        <!-- <figure class="ubication">
+          <img src="" alt="">
+        </figure> -->
+      </div>
+  
+      <div class="background-img">
+        <img class="img-shower" src="./img/Shower.png" alt="">
+      </div>
+  
+  
+      <p class="temperatura">15°c</p>
+      <p class="clima">Shower</p>
+  
+      <div class="container-days">
+        <p>Today</p>
+        <p>-</p>
+        <p class="dia-actual">Fri, 5 Jun</p>
+      </div>
+  
+      <p class="ubicacion">Ubicacion</p>
+  
+    </aside>
+  
+    <main>
+
+      <div class="box box1">
+        <p class="mañana">Tomorrow</p>
+        <img class="img-1" src="./img/HeavyRain.png" alt="">
+        <div>
+          <p class="temperatura-max max-1">16°C</p>
+          <p class="temperatura-min min-1">11°C</p>
+        </div>
+      </div>
+
+      <div class="box box2">
+        <p class="sun day-1">Sun</p>
+        <img class="img-2" src="./img/LightCloud.png" alt="">
+        <div>
+          <p class="temperatura-max max-2">16°C</p>
+          <p class="temperatura-min min-2">11°C</p>
+        </div>
+      </div>
+
+      <div class="box box3">
+        <p class="mon day-2">Mon</p>
+        <img class="img-3" src="./img/LightRain.png" alt="">
+        <div>
+          <p class="temperatura-max max-3">16°C</p>
+          <p class="temperatura-min min-3">11°C</p>
+        </div>
+      </div>
+
+      <div class="box box4">
+        <p class="tue day-3">Tue</p>
+        <img class="img-4" src="./img/Shower.png" alt="">
+        <div>
+          <p class="temperatura-max max-4">16°C</p>
+          <p class="temperatura-min min-4">11°C</p>
+        </div>
+      </div>
+
+      <div class="box box5">
+        <p class="wed day-4">Wed</p>
+        <img class="img-5" src="./img/Sleet.png" alt="">
+        <div>
+          <p class="temperatura-max max-5">16°C</p>
+          <p class="temperatura-min min-5">11°C</p>
+        </div>
+      </div>
+        
+  
+      <p class="title-main">Today's Highlights</p>
+  
+      <div class="box-wind box6">
+        <p class="wind">Wind status</p>
+        <p class="num veloci">7 mph</p>
+      </div>
+
+      <div class="box-humidity box7">
+        <p class="humi">Humidity</p>
+        <p class="num"><b class="porcen">84</b>%</p>
+        <div class="box-progressbar">
+          <p>0</p>
+          <p>50</p>
+          <p>100</p>
+        </div>
+        <progress class="progress-bar" max="100" value="">
+
+        </progress>
+      </div>
+ 
+      <div class="box-visibility box8">
+        <p class="visibi">Visibility</p>
+        <p class="miles">6,4 miles</p>
+      </div>
+      <div class="box-air box9">
+        <p class="air-pre">Air Pressure</p>
+        <p class="mb">998 mb</p>
+      </div>
+    
+    </main>
+
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>

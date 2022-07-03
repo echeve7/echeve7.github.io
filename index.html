@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" 
+    content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos/style.css">
+    <link rel="icon" href="./imagenes/icono.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Juan Echeveste</title>
+</head>
+<body>
+    <header>
+        <img src="./imagenes/icono.png" alt="">
+        <nav class="nav">
+            <ul>
+                <li>
+                    <a href="#ancla-formacion">Formación</a>
+                </li>
+                <li>
+                    <a href="#ancla-desarrollo">Desarrollo</a>
+                </li>
+                <li>
+                    <a id="nav-border" href="#ancla-contacto">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <img onclick="abrirMenu()" class="icon-menu" src="./imagenes/icons8-menu-30.png" alt="">
+    </header>
+    <section class="presentacion">
+        <div class="container-presentacion">
+            <p><b>Hola soy un apasionado por la tecnología</b> <br> con conocimientos básicos en JavaScript, HTML, CSS, MySQL y otras tecnologías.
+            </p>
+        </div>
+        
+        <figure class="logo-presentacion">
+            <img src="./imagenes/logocheve.png" alt="">
+        </figure>
+        <!-- <figure class="figura-img">
+            <img src="./imagenes/figura.png" alt="">
+        </figure> -->
+
+    </section>
+    <section class="sobre">
+        <div class="container-sobre">
+            <p class="hola">Hola soy Juan, gusto en conocerte</p>
+            <p>
+            Me gusta mucho la tecnología, los videojuegos y la programación, <br> actualmente me enfoco en el desarrollo web pero no me cierro a aprender otras tecnologías, <br> practico a travez de plataformas como Frontend Mentor y devChallenges también tomo cursos <br>  en la plataforma de Platzi para poder profundizar lo aprendido en la Universidad.
+            </p>
+        </div>
+        
+    </section>
+    <section class="habilidades">
+        <a name="ancla-formacion"></a>
+
+        <div class="box-ingles caja">
+            <img src="./imagenes/icons8-circled-envelope-50.png" alt="">
+            <p>Ingles</p>
+            <p>Intermedio A2 Según platzi</p>
+        </div>
+
+        <div class="box-front caja">
+            <img src="./imagenes/icons8-code-50.png" alt="">
+            <p>Lenguajes que practico</p>
+            <p>HTML, CSS, JavaScript, MySQL</p>
+            <p>Herramientas de Desarrollo</p>
+            <p>Visual Studio Code <br> GitHub <br> Terminal</p>
+        </div>
+
+        <div class="formacion caja">
+            <img src="./imagenes/icons8-study-64.png" alt="">
+            <p>Formación</p>
+            <p>- Licenciatura en Sistemas Computacionales</p>
+            <p>Universidad Autónoma de Nayarit</p>
+            <p>2017 - presente</p>
+            <p>- Participación en proyectos de investigación</p>
+            <p>- Participar en trabajos en equipo</p>
+            <p>- Planificación de proyectos informáticos</p>
+            <p>- Desarrollar programas computacionales en distintos lenguajes de programación</p>
+            
+
+            <p>Cursos en Platzi</p>
+            <a target="_blank" href="https://platzi.com/p/cheve/">Mi perfil</a>
+        </div>
+    </section>
+    
+    <section class="practicas">
+        <div class="container-portafolio">
+            <a name="ancla-desarrollo"></a>
+            <p>Estos son 2 retos que realice en las plataformas de Frontend Mentor y   devChallenges, <br>
+            Uno es una aplicación web para consultar el clima, la cual esta hecha con HTML, JavaScript, CSS y consultando una API <br> 
+            la cual nos proporciona la información del clima, y la otra pagina es un sitio web estatico en el cual solo se muestra <br>
+            información e imágenes ambas cuentan con diseño adaptado a dispositivos móviles y desktop 
+            </p>
+        </div>
+        
+        <div class="portafolio">
+            <figure class="app-clima">
+                <a target="_blank" href="./weather-app-master/index.html">Ver</a>
+                <a target="_blank" href="./weather-app-master/index.html"><img src="./imagenes/app-clima.png" alt=""></a>
+            </figure>
+            <figure class="web">
+                <a target="_blank" href="./sunnyside-agency-landing-page-main/index.html">Ver</a>
+                <a target="_blank" href="./sunnyside-agency-landing-page-main/index.html"><img src="./imagenes/web-sunny.png" alt=""></a>
+            </figure>
+        </div>
+    </section>
+    <footer>
+        <p>Contacto</p>
+        <nav class="nav-contacto">
+            <a name="ancla-contacto"></a>
+            <ul>
+                <li>
+                    <a target="_blank" href="mailto:juanecheveste9@gmail.com?">
+                        <img src="./imagenes/icons8-email.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.facebook.com/juan.echevestehernandez/">
+                        <img src="./imagenes/icons8-facebook-50.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="./code.js"></script>
+</body>
+</html>

@@ -1,0 +1,456 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container-pricipal{
+    display: flex;
+    flex-direction: row;
+}
+body {
+    background-color: rgb(30,33,58);
+}
+.container-aside {
+    background-color: rgb(30,33,58);
+    width: 25vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.search-box {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    
+}
+.ubication {
+    border-radius: 2px solid rgb(110, 112, 122);
+}
+.search-button {
+    height: 40px;
+    width: 125px;
+    background-color: rgb(110, 112, 122);
+    color: white;
+    
+}
+
+.background-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+      rgba(30, 33, 58, 0.95) 100%,
+      rgba(30, 33, 58, 0.95) 100%
+    ),
+    url("../img/Cloud-background.png");
+    background-position: 30% 70%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 80px;
+    
+}
+.img-shower{
+    width: 100px;
+    height: 100px;
+    /* object-fit: cover; */
+    
+}
+.temperatura {
+    font-size: 96px;
+    color: white;
+    margin-bottom: 50px;
+    
+}
+.clima {
+    font-size: 36px;
+    color: rgb(148,148,165);
+    margin-bottom: 40px;
+    
+}
+.container-days {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+    color: rgb(148,148,165);
+    margin-bottom: 50px;
+    
+}
+.ubicacion {
+    
+    color: rgb(148,148,165);
+    margin-bottom: 50px;
+    
+}
+
+main {
+    width: 75vw;
+    background-color: rgb(16, 14, 29);
+    color: white;
+    display: grid;
+
+    grid-template: repeat( 14,50px) / repeat( 20,5%);
+
+    grid-template-areas: 
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . b1 b1 . b2 b2 . b3 b3 . b4 b4 . b5 b5 . . ."
+    ". . . b1 b1 . b2 b2 . b3 b3 . b4 b4 . b5 b5 . . ."
+    ". . . b1 b1 . b2 b2 . b3 b3 . b4 b4 . b5 b5 . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . p p p p p . . . . . . . . . . . ."
+    ". . . b6 b6 b6 b6 b6 b6 . . b7 b7 b7 b7 b7 b7 . . ."
+    ". . . b6 b6 b6 b6 b6 b6 . . b7 b7 b7 b7 b7 b7 . . ."
+    ". . . b6 b6 b6 b6 b6 b6 . . b7 b7 b7 b7 b7 b7 . . ."
+    ". . . b6 b6 b6 b6 b6 b6 . . b7 b7 b7 b7 b7 b7 . . ."
+    ". . . . . . . . . . . . . . . . . . . ."
+    ". . . b8 b8 b8 b8 b8 b8 . . b9 b9 b9 b9 b9 b9 . . ."
+    ". . . b8 b8 b8 b8 b8 b8 . . b9 b9 b9 b9 b9 b9 . . ."
+    ". . . b8 b8 b8 b8 b8 b8 . . b9 b9 b9 b9 b9 b9 . . ."
+    
+    
+    
+    ;
+}
+/* .container-up {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    color: white; 
+} */
+.box {
+    /* width: 95px;
+    height: 140px; */
+    background-color: rgb(30,33,58);
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* margin-bottom: 80px;
+    font-size: 14px; */
+}
+.mañana, .sun, .mon, .tue, .wed {
+    margin-top: 12px;
+}
+
+.box img {
+    width: 50px;
+    height: 45px;
+    object-fit:cover;
+    margin-top: 4px;
+}
+.box div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 50px;
+    width: 75px;
+}
+
+.title-main {
+    font-size: 22px;
+}
+
+/* .container-middle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+} */
+.box-wind, .box-humidity, .box8, .box9 {
+    background-color: rgb(30,33,58);
+}
+.box1 {
+    grid-area: b1;
+}
+.box2 {
+    grid-area: b2;
+}
+.box3 {
+    grid-area: b3;
+}
+.box4 {
+    grid-area: b4;
+}
+.box5 {
+    grid-area: b5;
+}
+.title-main {
+    grid-area: p;
+}
+.box6 {
+    grid-area: b6;
+}
+.box7 {
+    grid-area: b7;
+}
+.box6, .box7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wind, .humi, .num{
+    margin-top: 18px;
+}
+.num {
+    font-size: 64px;
+}
+.box-progressbar {
+    font-size: 12px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+.box8 {
+    grid-area: b8;
+}
+.box9 {
+    grid-area: b9;
+}
+
+.box8, .box9 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    
+
+}
+.miles, .mb, .visibi, .air-pre {
+    margin-top: 18px;
+}
+
+.miles, .mb {
+    font-size: 64px;
+}
+
+.container-hide {
+    width: 30vw;
+    height: 100vh;
+    background-color: rgb(30,33,58);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    display: none;
+    
+    
+}
+.container-hide div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+.container-hide form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-hide img {
+    height: 22px;
+    width: 26px;
+    object-fit: cover;
+    margin: 12px 46px 24px 0;
+
+}
+.container-hide img:hover {
+    height: 26px;
+    width: 30px;
+}
+
+.input-buscar {
+    background-color: rgb(30,33,58);
+    border: solid 1px white;
+    color: white;
+    width: 50%;
+    height: 35px;
+    margin-right: 8px;
+}
+.button-hide {
+    width: 20%;
+    background-color: rgb(60, 71, 233);
+    text-decoration: none;
+    border: none;
+    color: white;
+    height: 36px;
+}
+
+@media (min-width: 375px) and (max-width: 700px)  {
+    .container-pricipal {
+        flex-direction: column;
+    }
+    .container-aside {
+        width: 100vw;
+    }
+    .background-img {
+        margin-bottom: 0;
+
+    }
+    .temperatura {
+        font-size: 68px;
+        margin-bottom: 25px;
+    }
+    .clima, .ubicacion {
+        margin-bottom: 20px;
+    }
+    main {
+        width: 100vw;
+        grid-template: repeat( 32,50px) / repeat( 7,14%);
+        grid-template-areas: 
+        ". . . . . . ."
+        ". b1 b1 . b2 b2 ."
+        ". b1 b1 . b2 b2 ."
+        ". b1 b1 . b2 b2 ."
+        ". . . . . . ."
+        ". b3 b3 . b4 b4 ."
+        ". b3 b3 . b4 b4 ."
+        ". b3 b3 . b4 b4 ."
+        ". . . . . . ."
+        ". b5 b5 . . . ."
+        ". b5 b5 . . . ."
+        ". b5 b5 . . . ."
+        ". . . . . . ."
+        ". p p p p p ."
+        ". b6 b6 b6 b6 b6 ."
+        ". b6 b6 b6 b6 b6 ."
+        ". b6 b6 b6 b6 b6 ."
+        ". b6 b6 b6 b6 b6 ."
+        ". . . . . . ."
+        ". b7 b7 b7 b7 b7 ."
+        ". b7 b7 b7 b7 b7 ."
+        ". b7 b7 b7 b7 b7 ."
+        ". b7 b7 b7 b7 b7 ."
+        ". . . . . . ."
+        ". b8 b8 b8 b8 b8 ."
+        ". b8 b8 b8 b8 b8 ."
+        ". b8 b8 b8 b8 b8 ."
+        ". . . . . . ."
+        ". b9 b9 b9 b9 b9 ."
+        ". b9 b9 b9 b9 b9 ."
+        ". b9 b9 b9 b9 b9 ."
+        ". . . . . . ."
+        ;
+    }
+    .num, .miles, .mb {
+        font-size: 54px;
+    }
+    .container-hide {
+        width: 100vw;
+    }
+    
+    .container-hide form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+
+@media (min-width: 701px) and (max-width: 1064px) {
+    .container-pricipal {
+        flex-direction: column;
+    }
+    .container-aside {
+        width: 100vw;
+    }
+    .background-img {
+        margin-bottom: 0;
+        height: 250px;
+        width: 500px;
+
+    }
+    main {
+        width: 100vw;
+        grid-template: repeat( 32,50px) / repeat( 7,14%);
+        grid-template-areas: 
+        ". . . . . . ."
+        ". b1 b1 . b2 b2 ."
+        ". b1 b1 . b2 b2 ."
+        ". b1 b1 . b2 b2 ."
+        ". . . . . . ."
+        ". b3 b3 . b4 b4 ."
+        ". b3 b3 . b4 b4 ."
+        ". b3 b3 . b4 b4 ."
+        ". . . . . . ."
+        ". b5 b5 . . . ."
+        ". b5 b5 . . . ."
+        ". b5 b5 . . . ."
+        ". . . . . . ."
+        ". p p p p p ."
+        ". b6 b6 b6 b6 b6 ."
+        ". b6 b6 b6 b6 b6 ."
+        ". b6 b6 b6 b6 b6 ."
+        ". b6 b6 b6 b6 b6 ."
+        ". . . . . . ."
+        ". b7 b7 b7 b7 b7 ."
+        ". b7 b7 b7 b7 b7 ."
+        ". b7 b7 b7 b7 b7 ."
+        ". b7 b7 b7 b7 b7 ."
+        ". . . . . . ."
+        ". b8 b8 b8 b8 b8 ."
+        ". b8 b8 b8 b8 b8 ."
+        ". b8 b8 b8 b8 b8 ."
+        ". . . . . . ."
+        ". b9 b9 b9 b9 b9 ."
+        ". b9 b9 b9 b9 b9 ."
+        ". b9 b9 b9 b9 b9 ."
+        ". . . . . . ."
+        ;
+    }
+    .background-img {
+        height: 400px;
+
+    }
+    .temperatura {
+        font-size: 96px;
+    }
+    .clima, .ubicacion {
+        margin-bottom: 0px;
+    }
+    .container-days {
+        font-size: 28px;
+        justify-content: space-around;
+    }
+    .ubicacion {
+        font-size: 24px;
+        
+    }
+    .search-button {
+        height: 60px;
+        width: 325px;
+        font-size: 18px;
+    }
+    .input-buscar, .button-hide {
+        height: 60px;
+        font-size: 22px;
+    }
+    .box p {
+        font-size: 22px;
+    }
+    .box div {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .progress-bar {
+        width: 50%;
+    }
+    .container-hide {
+        width: 100vw;
+    }
+    
+}
