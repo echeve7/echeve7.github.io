@@ -238,7 +238,7 @@ footer img {
 }
 }
 
-@media (min-width: 701px) and (max-width: 1064px) { 
+@media (min-width: 701px) and (max-width: 1064px) and (orientation: landscape) { 
     .habilidades {
         flex-direction: column;
         height: auto;
