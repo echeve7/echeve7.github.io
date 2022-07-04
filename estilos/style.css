@@ -84,7 +84,7 @@ header img {
    
 }
 .sobre {
-    height: 80vh;
+    height: 550px;
     width: 100%;
     font-size: 18px;
     background-color: rgb(062, 190, 255 );
@@ -104,7 +104,7 @@ header img {
 
 .habilidades {
     width: 90%;
-    height: 80vh;
+    height: auto;
     background-color: white;
     position: absolute;
     top: 160%;
@@ -124,7 +124,7 @@ header img {
 }
 
 .practicas {
-    height: 150vh;
+    height: 1200px;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -260,7 +260,7 @@ footer img {
         border-right: 0;
     }
     .practicas {
-        height: 220vh;
+        height: 1600px;
         line-height: 30px;
         padding-bottom: 24px;
         font-size: 18px;
@@ -340,7 +340,7 @@ footer img {
     .sobre {
         font-size: 14px;
         line-height: 30px;
-        height: 60vh;
+        height: 550px
     }
     .container-sobre p br, .practicas br {
         display: none;
@@ -353,7 +353,7 @@ footer img {
         flex-direction: column;
         height: auto;
         font-size: 16px;
-        top: 140%;
+        top: 130%;
     }
     .box-ingles, .box-front, .formacion {
         width: 100%;
@@ -370,7 +370,7 @@ footer img {
         border-right: 0;
     }
     .practicas {
-        height: 250vh;
+        height: 1750px;
         font-size: 14px;
         line-height: 30px;
         padding-bottom: 84px;
@@ -396,5 +396,6 @@ footer img {
         height: 30px;
     }
 }
+
 
 
